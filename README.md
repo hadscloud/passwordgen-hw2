@@ -33,7 +33,8 @@ THEN the password is either displayed in an alert or written to the page
 ```
 
 The following image demonstrates the application functionality:
-! [image of password generator](images/passwordgenpic.png)
+![image of password generator](images/passwordgenpic.png)
 
 
 ## Deployed Link
+(https://hadscloud.github.io/passwordgen-hw3/)
