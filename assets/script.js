@@ -12,7 +12,7 @@ var passwordCriteria = {
 var characterType = function () {
 // prompts user to include uppercase letters
     passwordCriteria.uppercase = window.prompt("Would you like to include uppcase characters? Type yes or no")
-    passwordCriteria.uppercase = passwordCriteria.uppercase.toUpperCase();
+    passwordCriteria.uppercase = passwordCriteria.uppercase.toLowerCase();
     if (passwordCriteria.uppercase === "yes") {
       passwordCriteria.uppercase = true;
     }
@@ -96,14 +96,16 @@ var generatePassword = function () {
       result += characters.charAt(Math.floor(Math.random() * n));
     }
     window.alert("Your new password is " + result);
-    return result;
+    return result.join('');
   }
 
   createPassword();
 
+
+
 };
-
-
+// displays password (but doesnt work)
+var generateBtn = document.querySelector('#generate');
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
